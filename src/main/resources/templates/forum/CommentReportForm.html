@@ -1,0 +1,29 @@
+<!-- resources/templates/forum/commentReportForm.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Comment</title>
+    <!-- Add your CSS styling here if needed -->
+</head>
+<body>
+    <h2>Report Comment</h2>
+    
+    <form th:action="@{/forum/post/{postId}/comment/{commentId}/report}" method="post">
+<!--        <input type="hidden" name="details" value="This comment is reported for...">-->
+        
+<!--        <div>-->
+<!--            <label for="details">Report Details:</label>-->
+<!--            <textarea id="details" name="details" rows="4" cols="50" required></textarea>-->
+<!--        </div>-->
+        
+        <div>
+            <button type="submit">Submit Report</button>
+        </div>
+    </form>
+    
+    <a href="/forum/post/{postId}">Back to Comment</a>
+</body>
+</html>

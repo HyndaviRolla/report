@@ -1,0 +1,24 @@
+<!-- resources/templates/forum/commentReportDetails.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Report Details</title>
+    
+</head>
+<body>
+    <h2>Comment Report Details</h2>
+    
+    <p>Reported Comment ID: <span th:text="${comment.id}"></span></p>
+    
+    <h3>Reported Comment:</h3>
+    <p th:text="${comment.content}"></p>
+    
+<!--    <h3>Report Details:</h3>-->
+<!--    <p th:text="${report.details}"></p>-->
+    
+    <a href="/forum/post/{postId}">Back to Comment</a>
+</body>
+</html>
